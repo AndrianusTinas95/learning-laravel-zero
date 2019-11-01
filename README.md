@@ -3,3 +3,4 @@
 03. Create your own PHP CLI Tool with Laravel Zero - 3 Get the current php ini file
 04. Create your own PHP CLI Tool with Laravel Zero - 4 Process user input parameters
 05. Create your own PHP CLI Tool with Laravel Zero - 5 Create a single PHP executable file
+06. Create your own PHP CLI Tool with Laravel Zero - 6 Create a ASCII logo
