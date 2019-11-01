@@ -29,6 +29,7 @@ class IniCommand extends Command
     public function handle()
     {
         $ini = shell_exec('php --ini');
+        $this->notify("PHP ini file",'Your PHP ini details are now displayed in the terminal','./public/img/logo.png');
         $this->info($ini);
     }
 
