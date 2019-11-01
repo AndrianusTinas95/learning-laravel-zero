@@ -5,3 +5,4 @@
 05. Create your own PHP CLI Tool with Laravel Zero - 5 Create a single PHP executable file
 06. Create your own PHP CLI Tool with Laravel Zero - 6 Create a ASCII logo
 07. Create your own PHP CLI Tool with Laravel Zero - 7 Send desktop notifications from PHP
+08. Create your own PHP CLI Tool with Laravel Zero - 8 Group commands into tasks
