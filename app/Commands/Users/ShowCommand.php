@@ -2,6 +2,7 @@
 
 namespace App\Commands\Users;
 
+use App\User;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
@@ -28,7 +29,13 @@ class ShowCommand extends Command
      */
     public function handle()
     {
-        //
+        $user = User::find($this->argument('id'));
+        if($user){
+            $this->info($user->name);
+
+        }else{
+            $this->info(' There is not user with this ID');
+        }
     }
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Commands\Users;
 
+use App\User;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
@@ -19,7 +20,7 @@ class AllCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'All Users';
 
     /**
      * Execute the console command.
@@ -28,7 +29,11 @@ class AllCommand extends Command
      */
     public function handle()
     {
-        //
+        $users = User::select('id','name')->get();
+        $this->info('All User : ');
+        foreach ($users as $key => $user) {
+            $this->info("ID : $user->id == name : $user->name ");
+        }
     }
 
     /**

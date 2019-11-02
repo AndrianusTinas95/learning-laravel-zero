@@ -2,6 +2,7 @@
 
 namespace App\Commands\Users;
 
+use App\User;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
@@ -28,7 +29,15 @@ class DeleteCommand extends Command
      */
     public function handle()
     {
-        //
+        dd($this->tes());
+        $user = User::find($this->argument('id'));
+        if($user){
+            $user->delete();
+            $this->info('User Deleted');
+            $this->notify('Delete','User Deleted','./public/img/logo.png');
+        }else{
+            $this->info(' There is not user with this ID');
+        }
     }
 
     /**
