@@ -9,3 +9,4 @@
 09. Create your own PHP CLI Tool with Laravel Zero - 9 Group similar commands
 10. Create your own PHP CLI Tool with Laravel Zero - 10 Interact with a database -> faild variable $factory issue
 11. Create your own PHP CLI Tool with Laravel Zero - 11 Interactive visual menus -> faild posix issue
+12. Create your own PHP CLI Tool with Laravel Zero - Confirmation, Tables and Autocomplete
