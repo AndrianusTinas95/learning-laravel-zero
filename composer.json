@@ -19,6 +19,7 @@
         "php": "^7.2",
         "illuminate/database": "^6.0",
         "laravel-zero/framework": "^6.0",
+        "nunomaduro/laravel-console-menu": "^2.1",
         "padraic/phar-updater": "^1.0.6",
         "zendframework/zend-text": "^2.7"
     },
